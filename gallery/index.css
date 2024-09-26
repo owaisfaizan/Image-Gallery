@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif'; /* Corrected font-family declaration */
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 5%;
+    
+}
+.container h2{
+    position: absolute;
+    top: 23px;
+    font-size: 44px;
+    /* border: px solid black; */
+}
+
+.gallery {
+    margin: 3px;
+    border: 6px solid black;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /*repeat(auto-fit, 1, minmax(250px, 1fr)); Use 1fr to ensure equal sizing */
+    grid-gap: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px; /* Set to 100% to fully fill the grid item */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
